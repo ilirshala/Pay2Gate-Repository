@@ -1,0 +1,159 @@
+.landingSeventh {
+  width: 100%;
+  height: auto;
+  .landingSeventh__right {
+    width: 70%;
+    height: 600px;
+    float: right;
+    background-image: url(../../../Assets/landingSeventh.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 5%;
+    .landingSeventh__card {
+      width: 590px;
+      height: 280px;
+      border-radius: 10px;
+      position: relative;
+      top: 100px;
+      left: -15%;
+      transition: 0.3s linear;
+      background: white;
+      .landingCard__orange {
+        width: 55px;
+        height: 55px;
+        border-radius: 200px;
+        background-color: #ff8c00;
+        display: grid;
+        place-items: center;
+        position: relative;
+        top: 30px;
+        left: -30px;
+        color: white;
+        .MuiSvgIcon-root {
+          font-size: 40px;
+        }
+      }
+      p {
+        width: 80%;
+        font-size: 14px;
+        position: relative;
+        top: -15px;
+        left: 45px;
+      }
+      .personTestimonial {
+        width: 80%;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        .MuiAvatar-root {
+          width: 60px;
+          height: 60px;
+          margin-right: 10px;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .landingSeventh {
+    width: 100%;
+    .landingSeventh__right {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 5%;
+
+      .landingSeventh__card {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        left: 0;
+        .landingCard__orange {
+          left: 0;
+          top: -25px;
+        }
+        p {
+          font-size: 13px;
+          width: 95%;
+          left: 10px;
+        }
+        .personTestimonial {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .landingSeventh {
+    width: 100%;
+    .landingSeventh__right {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 5%;
+
+      .landingSeventh__card {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        left: 0;
+        .landingCard__orange {
+          left: 0;
+          top: -25px;
+        }
+        p {
+          font-size: 13px;
+          width: 95%;
+          left: 10px;
+        }
+        .personTestimonial {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .landingSeventh {
+    .landingSeventh__right {
+      margin-bottom: 5%;
+
+      .landingSeventh__card {
+        left: -25%;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .landingSeventh {
+    .landingSeventh__right {
+      margin-bottom: 5%;
+
+      .landingSeventh__card {
+        left: -25%;
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1600px) {
+  .landingSeventh {
+    .landingSeventh__right {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.salesContainer {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .salesContainer__left {
+    width: 834px;
+    height: auto;
+  }
+  .salesContainer__right {
+    width: 45%;
+    height: auto;
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    p {
+      width: 488px;
+      font-size: 20px;
+      line-height: 36px;
+    }
+    .salesContainer__col {
+      width: 550px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      div {
+        h3 {
+          font-size: 20px;
+          font-weight: 500;
+          margin-top: 15px;
+          width: 160px;
+        }
+        .img {
+          width: 60px;
+          height: 60px;
+          border-radius: 200px;
+          border: 1px solid #ececec;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            height: 25px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+    .learnMore {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      color: #ff8c00;
+      font-size: 20px;
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .salesContainer {
+    width: 100%;
+    height: auto;
+    .salesContainer__right {
+      display: none;
+    }
+    .salesContainer__left {
+      width: 100%;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .salesContainer {
+    width: 100%;
+    height: auto;
+    .salesContainer__right {
+      display: none;
+    }
+    .salesContainer__left {
+      width: 100%;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .salesContainer {
+    flex-direction: column;
+    .salesContainer__right {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .salesContainer {
+    flex-direction: column;
+    .salesContainer__right {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

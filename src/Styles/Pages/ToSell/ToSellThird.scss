@@ -1,0 +1,141 @@
+.toSellThird {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  .toSellThird__left {
+    width: 50%;
+    height: auto;
+    h1 {
+      width: 460px;
+      font-weight: 500;
+      font-size: 35px;
+      margin: 40px auto;
+    }
+    p {
+      width: 460px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      margin: auto;
+    }
+  }
+  .toSellThird__right {
+    width: 740px;
+    height: 740px;
+    border-radius: 5px;
+    background-image: url(../../../Assets/toSellImg.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 200;
+    &::before {
+      content: " ";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -100;
+      border-radius: 5px;
+      background: rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .toSellThird {
+    width: 95%;
+    height: auto;
+    padding-bottom: 5%;
+    flex-direction: column;
+    margin: auto;
+    .toSellThird__left {
+      width: 100%;
+      margin-bottom: 15%;
+      h1 {
+        width: 100%;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+    .toSellThird__right {
+      width: 100%;
+      height: 450px;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .toSellThird {
+    width: 95%;
+    height: auto;
+    padding-bottom: 5%;
+    flex-direction: column;
+    margin: auto;
+    .toSellThird__left {
+      width: 100%;
+      margin-bottom: 15%;
+      h1 {
+        width: 100%;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+    .toSellThird__right {
+      width: 100%;
+      height: 450px;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .toSellThird {
+    width: 75%;
+    height: auto;
+    padding-bottom: 5%;
+    flex-direction: column;
+    margin: auto;
+    .toSellThird__left {
+      width: 100%;
+      margin-bottom: 15%;
+      h1 {
+        width: 100%;
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+    .toSellThird__right {
+      width: 100%;
+      height: 450px;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .toSellThird {
+    width: 90%;
+    .toSellThird__right {
+      width: 540px;
+      height: 540px;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

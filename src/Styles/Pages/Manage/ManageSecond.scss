@@ -1,0 +1,57 @@
+.manageSecond {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  .manageSecond__row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .manageSecond {
+    width: 95%;
+    .manageSecond__row {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .manageSecond {
+    width: 95%;
+    .manageSecond__row {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .manageSecond {
+    width: 85%;
+    .manageSecond__row {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .manageSecond {
+    width: 95%;
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

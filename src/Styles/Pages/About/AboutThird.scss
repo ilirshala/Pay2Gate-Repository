@@ -1,0 +1,62 @@
+.aboutThird {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  .aboutThirdRow {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .aboutThird {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    .aboutThirdRow {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .aboutThird {
+    width: 100%;
+    height: auto;
+    .aboutThirdRow {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .aboutThird {
+    width: 100%;
+    height: auto;
+    .aboutThirdRow {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .aboutThird {
+    width: 95%;
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

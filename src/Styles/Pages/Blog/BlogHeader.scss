@@ -1,0 +1,145 @@
+.blogHeader {
+  width: 100%;
+  height: 544px;
+  background-image: url(../../../Assets/blogBg.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 5%;
+  color: white;
+  h1 {
+    position: relative;
+    font-weight: 500;
+    top: 40%;
+    left: 15%;
+    font-size: 42px;
+  }
+  p {
+    position: relative;
+    top: 42%;
+    left: 15%;
+    width: 763px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .faqInput {
+    width: 763px;
+    height: 50px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: gray;
+    background: white;
+    position: relative;
+    top: 45%;
+    left: 15%;
+
+    input {
+      flex: 0.9;
+      height: 43px;
+      border: none;
+      background: none;
+      outline: none;
+      color: gray;
+      font-size: 15px;
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .blogHeader {
+    height: 70vh;
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      position: relative;
+      top: 30%;
+      left: 0;
+    }
+    p {
+      font-size: 14px;
+      top: 32%;
+      width: 90%;
+      left: 0;
+      margin: auto;
+      line-height: 27px;
+      text-align: center;
+    }
+    .faqInput {
+      width: 90%;
+      height: 45px;
+      top: 35%;
+      left: 0;
+      margin: auto;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .blogHeader {
+    height: 70vh;
+    h1 {
+      text-align: center;
+      font-size: 1.5rem;
+      position: relative;
+      top: 30%;
+      left: 0;
+    }
+    p {
+      font-size: 14px;
+      top: 32%;
+      width: 90%;
+      left: 0;
+      margin: auto;
+      line-height: 27px;
+      text-align: center;
+    }
+    .faqInput {
+      width: 90%;
+      height: 45px;
+      top: 35%;
+      left: 0;
+      margin: auto;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .blogHeader {
+    height: 70vh;
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      position: relative;
+      top: 30%;
+      left: 0;
+    }
+    p {
+      font-size: 18px;
+      top: 32%;
+      width: 90%;
+      left: 0;
+      margin: auto;
+      line-height: 27px;
+      text-align: center;
+    }
+    .faqInput {
+      width: 90%;
+      height: 45px;
+      top: 35%;
+      left: 0;
+      margin: auto;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

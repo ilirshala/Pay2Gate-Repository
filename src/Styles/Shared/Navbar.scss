@@ -1,0 +1,372 @@
+//Solutions Megamenu
+.solutionsMegaMenu::before {
+  content: "";
+  width: 20px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -10px;
+  left: 29%;
+}
+.solutionsMegaMenu {
+  width: 78%;
+  height: 320px;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: white;
+  border-radius: 10px;
+  position: fixed;
+  top: 70px;
+  left: 15%;
+  display: none;
+  z-index: 999999;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+.productsMegaMenu::before {
+  content: "";
+  width: 20px;
+  height: 30px;
+  background-color: white;
+  position: absolute;
+  transform: rotate(45deg);
+  top: -10px;
+  left: 14%;
+}
+.productsMegaMenu {
+  width: 65%;
+  height: 280px;
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: white;
+  border-radius: 10px;
+  position: fixed;
+  top: 70px;
+  left: 20%;
+  z-index: 999999;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+//Navbar Scroll design
+.navbarActive.navbar {
+  background: white;
+  transition: 0.2s linear;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .navbarLogo {
+    .logo {
+      background: #ff8c00;
+      transition: 0.2s linear;
+    }
+    h2 {
+      color: black;
+      transition: 0.2s linear;
+    }
+  }
+  .navbarList {
+    ul {
+      li {
+        color: black;
+
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+  .navbarButtons {
+    button:nth-child(1) {
+      color: black;
+    }
+  }
+  .burgerIcon {
+    .MuiSvgIcon-root {
+      color: black;
+    }
+  }
+}
+.mobileNavbar {
+  display: none;
+}
+
+//All Navbar
+.navbar {
+  width: 100%;
+  padding: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 1000;
+  .navbarLogo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    h2 {
+      span {
+        font-weight: normal;
+      }
+    }
+    .logo {
+      width: 55px;
+      height: 55px;
+      border-radius: 200px;
+      background: none;
+      display: grid;
+      place-items: center;
+      margin: 0 10px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .navbarList {
+    width: 50%;
+    margin-left: 8%;
+
+    ul {
+      list-style: none;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      li {
+        font-weight: 600;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          font-weight: 600;
+          color: white;
+        }
+      }
+      li:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .navbarButtons {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 3%;
+    button {
+      width: 130px;
+      height: 40px;
+      border-radius: 200px;
+      border: none;
+      color: white;
+      background: none;
+      border: 2px solid transparent;
+      font-weight: 600;
+      font-size: 16px;
+      transition: 0.4s linear;
+    }
+    button:nth-child(1):hover {
+      border: 2px solid black;
+      background: white;
+      color: black;
+      cursor: pointer;
+    }
+    button:nth-child(2):hover {
+      border: 2px solid white;
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+    button:nth-child(2) {
+      border: 2px solid black;
+      background: white;
+      color: black;
+    }
+  }
+  .burgerIcon {
+    display: none;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .mobileNavbar {
+    transform: translateX(-700px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-height: 100vh;
+    background: #dee6e8;
+    width: 75%;
+    display: block;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 99999999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .solutionsMegaMenu,
+  .productsMegaMenu {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .navbarLogo {
+      flex: 1;
+      margin-left: 0%;
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .navbarList {
+      display: none;
+    }
+    .navbarButtons {
+      display: none;
+    }
+    .burgerIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15%;
+      .MuiSvgIcon-root {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .mobileNavbar {
+    transform: translateX(-700px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-height: 100vh;
+    background: #dee6e8;
+    width: 75%;
+    display: block;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 99999999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .solutionsMegaMenu,
+  .productsMegaMenu {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .navbarLogo {
+      margin-left: 0%;
+      width: 50%;
+
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .navbarList {
+      display: none;
+    }
+    .navbarButtons {
+      display: none;
+    }
+    .burgerIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10%;
+      .MuiSvgIcon-root {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .mobileNavbar {
+    transform: translateX(-700px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-height: 100vh;
+    background: #dee6e8;
+    width: 75%;
+    display: block;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 99999999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .solutionsMegaMenu,
+  .productsMegaMenu {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .navbarLogo {
+      width: 50%;
+      margin-left: 0%;
+      h2 {
+        font-size: 1.5em;
+      }
+    }
+    .navbarList {
+      display: none;
+    }
+    .navbarButtons {
+      display: none;
+    }
+    .burgerIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8%;
+      .MuiSvgIcon-root {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .solutionsMegaMenu::before {
+    left: 35%;
+  }
+  .solutionsMegaMenu {
+    width: 82%;
+    left: 10%;
+  }
+  .navbar {
+    .navbarList {
+      ul {
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

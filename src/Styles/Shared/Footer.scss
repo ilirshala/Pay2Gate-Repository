@@ -1,0 +1,530 @@
+.footer {
+  width: 100%;
+  height: 80vh;
+  background: #212123;
+  color: white;
+  .footerHeader {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    h1 {
+      margin: 20px 0 10px 0;
+      font-weight: 500;
+      font-size: 30px;
+    }
+    p {
+      margin: 0 0 20px 0;
+    }
+  }
+  hr {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1px;
+    border: none;
+    background: #535353;
+  }
+  .footer__links {
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    div {
+      width: 25%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h4 {
+        color: #535353;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 33%;
+        font-size: 18px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .MuiSvgIcon-root {
+          display: none;
+        }
+      }
+      ul {
+        list-style: none;
+        width: 100%;
+        margin: auto;
+        text-align: left;
+        li {
+          font-size: 16px;
+          text-align: left;
+          padding: 5px;
+          margin-left: 33%;
+          transition: 0.3s linear;
+          a {
+            color: white;
+            transition: 0.3s linear;
+
+            &:hover {
+              cursor: pointer;
+              color: #535353;
+            }
+          }
+          &:hover {
+            cursor: pointer;
+            color: #535353;
+          }
+        }
+      }
+    }
+  }
+  .contactUs {
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 35px;
+    .emailAddress {
+      width: 450px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 200px;
+      border: 1px solid #fff;
+      h3 {
+        font-size: 18px;
+      }
+      input {
+        height: 40px;
+        margin: 0 15px;
+        background: none;
+        border: none;
+        outline: none;
+        color: gray;
+        flex: 1;
+      }
+      button {
+        width: 130px !important;
+        height: 44px;
+      }
+    }
+  }
+  .company {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: -15px;
+    margin-top: -15px;
+    .navbarLogo {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      margin-left: 3%;
+      h2 {
+        span {
+          font-weight: normal;
+        }
+      }
+      .logo {
+        width: 55px;
+        height: 55px;
+        border-radius: 200px;
+        background: none;
+        display: grid;
+        place-items: center;
+        margin: 0 10px;
+      }
+    }
+    .otherThings {
+      display: flex;
+      align-items: center;
+      .phoneCall {
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+        .MuiSvgIcon-root {
+          color: #ff8c00;
+          font-size: 30px;
+          margin: 0 15px;
+        }
+        span {
+          color: white;
+        }
+      }
+      div:nth-child(2) {
+        margin-top: -22px;
+      }
+    }
+  }
+  .copyright {
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    div:nth-child(1) {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        font-size: 14px;
+        font-weight: normal;
+        color: #535353;
+      }
+    }
+    div:nth-child(2) {
+      width: 20%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      img {
+        transition: 0.3s linear;
+        &:hover {
+          cursor: pointer;
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    .footerHeader {
+      width: 95%;
+      margin: auto;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 13px;
+      }
+      button {
+        height: 40px;
+      }
+    }
+    hr {
+      width: 95%;
+    }
+    .footer__links {
+      width: 95%;
+      flex-direction: column;
+      div {
+        width: 100%;
+        h4 {
+          margin-left: 0;
+          .MuiSvgIcon-root {
+            display: block;
+          }
+        }
+        ul {
+          li {
+            display: none;
+          }
+        }
+      }
+    }
+    .contactUs {
+      width: 95%;
+      flex-direction: column;
+      .emailAddress {
+        width: 95%;
+      }
+    }
+    .company {
+      width: 95%;
+      flex-direction: column;
+      .navbarLogo {
+        margin-left: 25%;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .otherThings {
+        width: 100%;
+        flex-direction: column;
+        .phoneCall {
+          margin: 30px 0;
+        }
+      }
+    }
+    .copyright {
+      width: 95%;
+      margin: auto;
+      flex-direction: column;
+      padding-bottom: 15%;
+      align-items: center;
+      div:nth-child(1) {
+        width: 95%;
+        flex-direction: column;
+      }
+      div:nth-child(2) {
+        width: 95%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    .footerHeader {
+      width: 95%;
+      margin: auto;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 13px;
+      }
+      button {
+        height: 40px;
+      }
+    }
+    hr {
+      width: 95%;
+    }
+    .footer__links {
+      width: 95%;
+      flex-direction: column;
+      div {
+        width: 100%;
+        h4 {
+          margin-left: 0;
+          .MuiSvgIcon-root {
+            display: block;
+          }
+        }
+        ul {
+          li {
+            display: none;
+          }
+        }
+      }
+    }
+    .contactUs {
+      width: 95%;
+      flex-direction: column;
+      .emailAddress {
+        width: 95%;
+      }
+    }
+    .company {
+      width: 95%;
+      flex-direction: column;
+      .navbarLogo {
+        margin-left: 25%;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .otherThings {
+        width: 100%;
+        flex-direction: column;
+        .phoneCall {
+          margin: 30px 0;
+        }
+      }
+    }
+    .copyright {
+      width: 95%;
+      margin: auto;
+      flex-direction: column;
+      padding-bottom: 15%;
+      align-items: center;
+      div:nth-child(1) {
+        width: 95%;
+        flex-direction: column;
+      }
+      div:nth-child(2) {
+        width: 95%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    .footerHeader {
+      width: 95%;
+      margin: auto;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 13px;
+      }
+      button {
+        height: 40px;
+      }
+    }
+    hr {
+      width: 95%;
+    }
+    .footer__links {
+      width: 55%;
+      flex-direction: column;
+      div {
+        width: 100%;
+        h4 {
+          margin-left: 0;
+          .MuiSvgIcon-root {
+            display: block;
+          }
+        }
+        ul {
+          li {
+            display: none;
+          }
+        }
+      }
+    }
+    .contactUs {
+      width: 95%;
+      flex-direction: column;
+      .emailAddress {
+        width: 55%;
+      }
+    }
+    .company {
+      width: 95%;
+      flex-direction: column;
+      .navbarLogo {
+        margin-left: 35%;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .otherThings {
+        width: 100%;
+        flex-direction: column;
+        .phoneCall {
+          margin: 30px 0;
+        }
+      }
+    }
+    .copyright {
+      width: 95%;
+      margin: auto;
+      flex-direction: column;
+      padding-bottom: 15%;
+      align-items: center;
+      div:nth-child(1) {
+        width: 95%;
+        flex-direction: column;
+      }
+      div:nth-child(2) {
+        width: 55%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    .footerHeader {
+      width: 95%;
+      margin: auto;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 13px;
+      }
+      button {
+        height: 40px;
+      }
+    }
+    hr {
+      width: 95%;
+    }
+    .footer__links {
+      width: 55%;
+      flex-direction: column;
+      div {
+        width: 100%;
+        h4 {
+          margin-left: 0;
+          .MuiSvgIcon-root {
+            display: block;
+          }
+        }
+        ul {
+          li {
+            display: none;
+          }
+        }
+      }
+    }
+    .contactUs {
+      width: 95%;
+      flex-direction: column;
+      .emailAddress {
+        width: 55%;
+      }
+    }
+    .company {
+      width: 95%;
+      flex-direction: column;
+      .navbarLogo {
+        margin-left: 35%;
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+      .otherThings {
+        width: 100%;
+        flex-direction: column;
+        .phoneCall {
+          margin: 30px 0;
+        }
+      }
+    }
+    .copyright {
+      width: 95%;
+      margin: auto;
+      flex-direction: column;
+      padding-bottom: 15%;
+      align-items: center;
+      div:nth-child(1) {
+        width: 95%;
+        flex-direction: column;
+      }
+      div:nth-child(2) {
+        width: 55%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

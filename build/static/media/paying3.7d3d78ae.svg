@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.296" height="59.168" viewBox="0 0 42.296 59.168">
+  <g id="spaceship" transform="translate(-19.5 -1.747)">
+    <path id="Path_924" data-name="Path 924" d="M59.622,43.828H47.32L44.13,22.485A17.788,17.788,0,0,1,47.87,8.7l5.6-6.951,5.6,6.951a17.788,17.788,0,0,1,3.74,13.787Z" transform="translate(-12.823)" fill="#fafafa"/>
+    <path id="Path_925" data-name="Path 925" d="M19.5,65.958l12.658-8.611L34.5,73h-15Z" transform="translate(0 -29.177)" fill="#fafafa"/>
+    <path id="Path_926" data-name="Path 926" d="M36.6,65.448l-9.362,6.368a.831.831,0,0,0-.364.687v4.752h1.663v-4.31l8.336-5.671Z" transform="translate(-3.872 -33.428)" fill="#fafafa"/>
+    <path id="Path_927" data-name="Path 927" d="M91.94,65.958,79.283,57.347,76.943,73h15Z" transform="translate(-30.144 -29.177)" fill="#fafafa"/>
+    <path id="Path_928" data-name="Path 928" d="M89.717,71.819l-9.362-6.368-.273,1.826,8.336,5.671v4.31h1.663V72.506a.831.831,0,0,0-.364-.687Z" transform="translate(-31.791 -33.429)" fill="#fafafa"/>
+    <path id="Path_929" data-name="Path 929" d="M51.057,90.293h12.3v4.514h-12.3Z" transform="translate(-16.56 -46.465)" fill="#fafafa"/>
+    <path id="Path_930" data-name="Path 930" d="M59.7,112.365a17.215,17.215,0,0,1-3.891-10.9V99.792h7.782v1.671a17.215,17.215,0,0,1-3.891,10.9Z" transform="translate(-19.055 -51.45)" fill="#fafafa"/>
+    <path id="Path_931" data-name="Path 931" d="M62.25,99.792v4.376a.832.832,0,0,0,1.663,0V99.792Z" transform="translate(-22.433 -51.45)" fill="#fafafa"/>
+    <path id="Path_932" data-name="Path 932" d="M3.891,0C6.04,0,7.783,2.473,7.783,5.525S6.04,11.049,3.891,11.049,0,8.576,0,5.525,1.742,0,3.891,0Z" transform="translate(36.757 12.204)" fill="#ff8c00"/>
+  </g>
+</svg>

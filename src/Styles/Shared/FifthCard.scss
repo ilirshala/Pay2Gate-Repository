@@ -1,0 +1,73 @@
+.fifthCard {
+  width: 400px;
+  height: 384px;
+  padding: 20px;
+  background: #212123;
+  color: white;
+  transition: 0.3s linear;
+  .icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 200px;
+    background: white;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    transition: 0.3s linear;
+  }
+  h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+  &:hover {
+    cursor: pointer;
+    color: #0a0d25;
+    background: #e3edf2;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    .icon {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background: #ff8c00;
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .fifthCard {
+    width: 300px;
+    margin-top: 15px;
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .fifthCard {
+    width: 300px;
+    margin-top: 15px;
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .fifthCard {
+    width: 300px;
+    margin-top: 15px;
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .fifthCard {
+    width: 270px;
+    margin-top: 15px;
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

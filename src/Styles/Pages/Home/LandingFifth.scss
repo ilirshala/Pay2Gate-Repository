@@ -1,0 +1,131 @@
+.landingFifth {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5%;
+  .landingFifth__title {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 3%;
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      width: 60%;
+      font-weight: 500;
+    }
+  }
+  .landingFifth__row {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .landingFifth {
+    width: 100%;
+    height: auto;
+    .landingFifth__title {
+      width: 95%;
+      flex-direction: column;
+      margin: auto;
+      h2 {
+        font-size: 1.3rem;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+    .landingFifth__row {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .landingFifth {
+    width: 100%;
+    height: auto;
+    .landingFifth__title {
+      width: 95%;
+      flex-direction: column;
+      margin: auto;
+      h2 {
+        font-size: 1.3rem;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+    .landingFifth__row {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .landingFifth {
+    width: 100%;
+    height: auto;
+    .landingFifth__title {
+      width: 95%;
+      flex-direction: column;
+      margin: auto;
+      h2 {
+        font-size: 1.3rem;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+    .landingFifth__row {
+      width: 90%;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .landingFifth {
+    width: 100%;
+    height: auto;
+    .landingFifth__title {
+      width: 95%;
+
+      margin: auto;
+      h2 {
+        font-size: 1.3rem;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+    .landingFifth__row {
+      width: 95%;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

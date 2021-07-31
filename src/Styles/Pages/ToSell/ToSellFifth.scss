@@ -1,0 +1,144 @@
+.toSellFift {
+  width: 100%;
+  height: 1020px;
+  background: #212123;
+  color: white;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .toSellFifth__left {
+    width: 50%;
+    height: auto;
+    h1 {
+      width: 353px;
+      margin-left: 35%;
+      font-weight: 500;
+    }
+    p {
+      width: 486px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      margin: 25px auto;
+      margin-left: 35%;
+    }
+  }
+  .toSellFifth__right {
+    width: 970px;
+    height: 742px;
+    background-image: url(../../../Assets/toSellFifth.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .toSellFift {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+    .toSellFifth__left {
+      width: 95%;
+      margin: auto;
+
+      h1 {
+        width: 100%;
+        font-size: 1.5rem;
+        margin-left: 0;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+        margin-left: 0;
+      }
+    }
+    .toSellFifth__right {
+      width: 100%;
+      height: 50%;
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .toSellFift {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+
+    .toSellFifth__left {
+      width: 95%;
+      margin: auto;
+
+      h1 {
+        width: 100%;
+        font-size: 1.5rem;
+        margin-left: 0;
+      }
+      p {
+        width: 100%;
+        font-size: 14px;
+        margin-left: 0;
+      }
+    }
+    .toSellFifth__right {
+      width: 100%;
+      height: 50%;
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .toSellFift {
+    height: 100vh;
+    .toSellFifth__right {
+      width: 770px;
+      height: 542px;
+    }
+    .toSellFifth__left {
+      margin: auto;
+
+      h1 {
+        margin-left: 5%;
+        font-size: 1.5rem;
+      }
+      p {
+        width: 80%;
+        font-size: 14px;
+        margin-left: 5%;
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .toSellFift {
+    height: 100vh;
+    .toSellFifth__right {
+      width: 770px;
+      height: 542px;
+    }
+    .toSellFifth__left {
+      margin: auto;
+
+      h1 {
+        margin-left: 5%;
+        font-size: 1.5rem;
+      }
+      p {
+        width: 80%;
+        font-size: 14px;
+        margin-left: 5%;
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

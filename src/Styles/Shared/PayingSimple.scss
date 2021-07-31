@@ -1,0 +1,70 @@
+.payingSimple {
+  width: 310px;
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  transition: 0.3s linear;
+  .payImg {
+    width: 70px;
+    height: 60px;
+    border-radius: 200px;
+    display: grid;
+    place-items: center;
+    background-color: #ff8c00;
+    margin-right: 15px;
+    margin-top: 15px;
+    img {
+      height: 30px;
+    }
+  }
+  .payTitle {
+    width: 90%;
+    h3 {
+      font-weight: 600;
+      margin-top: 25px;
+    }
+    p {
+      width: 70%;
+      font-weight: 400;
+      color: #707070;
+      font-size: 15px;
+    }
+  }
+}
+
+.payingSimple:hover {
+  cursor: pointer;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .payingSimple {
+    width: 90%;
+    margin-top: 15px;
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .payingSimple {
+    width: 50%;
+    margin-top: 15px;
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .payingSimple {
+    margin-top: 15px;
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

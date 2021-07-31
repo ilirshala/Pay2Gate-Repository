@@ -1,0 +1,224 @@
+.loginContainer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.67);
+  position: absolute;
+  z-index: -100;
+  color: white;
+}
+.loginContainer {
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../../Assets/loginBg.webp);
+  position: relative;
+  z-index: 200;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .loginForm {
+    width: 570px;
+    height: 500px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    margin-top: 3%;
+    h1 {
+      font-weight: normal;
+      font-size: 28px;
+      text-align: center;
+      padding-top: 30px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 18px;
+      text-align: center;
+      font-weight: 300;
+      color: #707070;
+    }
+  }
+  form {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    label {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+    .emailInput {
+      width: 100%;
+      height: 45px;
+      border: 1px solid #5a5a5a;
+      border-radius: 200px;
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      .MuiSvgIcon-root {
+        margin: 0 15px;
+      }
+      input {
+        flex: 1;
+        height: 40px;
+        background: none;
+        border: none;
+        outline: none;
+        color: #5a5a5a;
+        font-size: 16px;
+      }
+      input::placeholder {
+        color: #5a5a5a;
+      }
+    }
+    .rememberMe {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      div {
+        display: flex;
+        align-items: center;
+        input[type="checkbox"] {
+          transform: scale(1.5);
+          margin-right: 10px;
+        }
+      }
+      h4 {
+        font-weight: normal;
+      }
+    }
+    button {
+      width: 100% !important;
+    }
+    h3 {
+      font-weight: normal;
+      text-align: center;
+      margin: 15px 0;
+      font-size: 18px;
+      span {
+        color: #0a4bff;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .loginContainer {
+    width: 100%;
+    height: 120vh;
+    .loginForm {
+      width: 90%;
+      height: auto;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 14px;
+      }
+      form {
+        width: 85%;
+        .rememberMe {
+          font-size: 13px;
+          width: 95%;
+          margin: auto;
+          margin-bottom: 15px;
+        }
+        .emailInput {
+          height: 40px;
+        }
+        h3 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .loginContainer {
+    width: 100%;
+    height: 120vh;
+    .loginForm {
+      width: 90%;
+      height: auto;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 14px;
+      }
+      form {
+        width: 85%;
+        .rememberMe {
+          font-size: 13px;
+          width: 95%;
+          margin: auto;
+          margin-bottom: 15px;
+        }
+        .emailInput {
+          height: 40px;
+        }
+        h3 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .loginContainer {
+    width: 100%;
+    height: 100vh;
+    .loginForm {
+      width: 80%;
+      height: auto;
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 14px;
+      }
+      form {
+        width: 85%;
+        .rememberMe {
+          font-size: 13px;
+          width: 95%;
+          margin: auto;
+          margin-bottom: 15px;
+        }
+        .emailInput {
+          height: 40px;
+        }
+        h3 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .loginContainer {
+    height: 100vh;
+    .loginForm {
+      width: 530px;
+      height: 470px;
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}

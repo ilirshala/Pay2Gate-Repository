@@ -1,0 +1,165 @@
+.pricingThird {
+  width: 75%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: -10%;
+  margin-bottom: 5%;
+  .pricingCol {
+    width: 671px;
+    height: 330px;
+    background: #ff8c00;
+    color: white;
+    display: flex;
+    .pricingImg {
+      width: 68px;
+      height: 68px;
+      border-radius: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      margin-top: 40px;
+      margin-left: 30px;
+      margin-right: 50px;
+      img {
+        height: 26px;
+        object-fit: contain;
+      }
+    }
+    .otherThings {
+      flex: 1;
+      margin-top: 40px;
+      h3 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 35px;
+      }
+      p {
+        width: 354px;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 35px;
+      }
+      .learnMore {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        h4 {
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+/* XS Devices */
+@media (max-width: 575px) {
+  .pricingThird {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    .pricingCol {
+      width: 100%;
+      margin-top: 30px;
+      height: auto;
+      flex-direction: column;
+      padding-bottom: 10%;
+
+      .pricingImg {
+        margin-right: 0;
+      }
+      .otherThings {
+        margin-left: 40px;
+        p {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+/* SM Devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .pricingThird {
+    width: 75%;
+    height: auto;
+    flex-direction: column;
+    .pricingCol {
+      width: 100%;
+      margin-top: 30px;
+      height: auto;
+      flex-direction: column;
+      padding-bottom: 10%;
+
+      .pricingImg {
+        margin-right: 0;
+      }
+      .otherThings {
+        margin-left: 40px;
+        p {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+/* MD Devices */
+@media (min-width: 768px) and (max-width: 990px) {
+  .pricingThird {
+    width: 75%;
+    height: auto;
+    flex-direction: column;
+    .pricingCol {
+      width: 100%;
+      margin-top: 30px;
+      height: auto;
+      flex-direction: column;
+      padding-bottom: 10%;
+
+      .pricingImg {
+        margin-right: 0;
+      }
+      .otherThings {
+        margin-left: 40px;
+        p {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+/* LG Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pricingThird {
+    width: 75%;
+    height: auto;
+    flex-direction: column;
+    .pricingCol {
+      width: 100%;
+      margin-top: 30px;
+      height: auto;
+      flex-direction: column;
+      padding-bottom: 10%;
+
+      .pricingImg {
+        margin-right: 0;
+      }
+      .otherThings {
+        margin-left: 40px;
+        p {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+/* XL Devices */
+@media (min-width: 1200px) {
+}
